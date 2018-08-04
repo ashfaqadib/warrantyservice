@@ -1,0 +1,69 @@
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <form method="post">
+        <table align="center" style="margin-top: 79;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                       Add Purchase
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Product Unique ID
+                    </td>
+                    <td>
+                        <input type="text" name="uniqueId"/>
+                    </td>
+                    <td name="uniqueIdError">
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Product Name
+                    </td>
+                    <td>
+                        <input type="text" list="browsers" name="productName">
+                        <datalist id="browsers">
+                            <script>
+                                for(var index in productsNames)
+                                {
+                                    document.write('<option value="'+productsNames[index]+'">');
+                                }
+                            </script>
+                        </datalist>
+                    </td>
+                    <td name="productNameError">
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Customer Phone No.
+                    </td>
+                    <td>
+                        <input type="text" name="customerPhone"/>
+                    </td>
+                    <td name="customerPhoneError">
+                    
+                    </td>
+                </tr>             
+                <tr>
+                    <td colspan="3">
+                        <input type="submit"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+<script>
+    document.getElementsByName("addPurchaseLink")[0].className = "active";
+</script>
+</html>

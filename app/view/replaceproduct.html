@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <form method="post">
+        <table align="center" style="margin-top: 79;">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                       Replace Product
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Product Unique ID
+                    </td>
+                    <td>
+                        <input type="text" name="uniqueId"/>
+                    </td>
+                    <td name="uniqueIdError">
+                    
+                    </td>
+                </tr>              
+                <tr>
+                    <td colspan="3">
+                        <input type="submit"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+<script>
+    document.getElementsByName("replaceProductLink")[0].className = "active";
+</script>
+</html>

@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <form method="post">
+        <table align="center"  style="margin-top: 79;">
+            <thead>
+                <th>Unique ID</th>
+                <th>Name of Product</th>
+                <th>Customer Phone No.</th>
+                <th>Purchase Date</th>
+                <th>Expiry Date</th>
+                <th>Replace Date</th>
+                <th>Status Date</th>
+            </thead>
+            <tbody>
+                <script>
+                document.write(
+                    '<tr><td>'+ entry.unique_id +'</td>'+
+                    '<td>'+ entry.name_of_product +'</td>'+
+                    '<td>'+ entry.customer_phone +'</td>'+
+                    '<td>'+ entry.purchase_date +'</td>'+
+                    '<td>'+ entry.expiry_date +'</td>'+
+                    '<td>'+ entry.replace_date +'</td>'+
+                    '<td>'+ entry.status +'</td></tr>'
+                    );
+                </script>
+                <tr>
+                    <td colspan="7">The above entry will be added. Are you sure you want to submit?</td>
+                </tr>
+                <tr>
+                    <td colspan="7"><input type="submit" value="Confirm Submit"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </div>
+    </body>
+    <script>
+            document.getElementsByName("showHistoryLink")[0].className = "active";
+    </script>
+    </html>

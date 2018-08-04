@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <table align="center"  style="margin-top: 79;">
+            <thead>
+                <th>Unique ID</th>
+                <th>Name of Product</th>
+                <th>Customer Phone No.</th>
+                <th>Purchase Date</th>
+                <th>Expiry Date</th>
+                <th>Replace Date</th>
+                <th>Status Date</th>
+            </thead>
+            <tbody>
+                <script>
+                for(var index in entries){
+                document.write(
+                    '<tr><td>'+ entries[index].unique_id +'</td>'+
+                    '<td>'+ entries[index].name_of_product +'</td>'+
+                    '<td>'+ entries[index].customer_phone +'</td>'+
+                    '<td>'+ entries[index].purchase_date +'</td>'+
+                    '<td>'+ entries[index].expiry_date +'</td>'+
+                    '<td>'+ entries[index].replace_date +'</td>'+
+                    '<td>'+ entries[index].status +'</td></tr>'
+                    );
+                }
+                </script>
+            </tbody>
+        </table>
+    </div>
+    </body>
+    <script>
+            document.getElementsByName("showHistoryLink")[0].className = "active";
+    </script>
+    </html>

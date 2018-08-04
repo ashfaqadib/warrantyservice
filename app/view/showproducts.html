@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <table align="center"  style="margin-top: 79;">
+            <thead>
+                <th>Product Name</th>
+                <th>Validity (In Years)</th>
+                <th>Type</th>
+            </thead>
+            <tbody>
+                <script>
+                for(var index in products){
+                document.write(
+                    '<tr><td>'+ products[index].name +'</td>'+
+                    '<td>'+ products[index].validity_in_years +'</td>'+
+                    '<td>'+ products[index].type +'</td></tr>'
+                    );
+                }
+                </script>
+            </tbody>
+        </table>
+    </div>
+    </body>
+    <script>
+            document.getElementsByName("showProductsLink")[0].className = "active";
+    </script>
+    </html>
